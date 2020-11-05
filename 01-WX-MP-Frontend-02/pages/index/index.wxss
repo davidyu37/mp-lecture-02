@@ -1,0 +1,46 @@
+/* pages/landing/landing.wxss */
+.banner {
+  padding-top:20px; 
+  height: 100vh; 
+  background-image: url(https://www.lewagon.com/api/v1/cities/shenzhen/cover?width=1200);
+  background-size: cover;
+}
+
+.container {
+  padding: 100rpx 0;
+  width: 90%;
+  margin: 0 auto;
+} 
+
+.header {
+  font-size: 80rpx;
+  font-family: Arial;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-header {
+  font-size: 40rpx;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-top: 40rpx;
+}
+
+.btn-flat {
+  margin: 20px;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}

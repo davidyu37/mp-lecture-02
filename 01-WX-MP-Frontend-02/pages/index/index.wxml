@@ -1,0 +1,12 @@
+<!--pages/landing/landing.wxml-->
+
+<view class="banner">
+  <view class="container">
+    <view class="header">F*** my code</view>
+    <view class="sub-header">Share your horror stories when writing code at Le Wagon</view>
+    <button class="btn-flat" bindtap="goToStoriesPage">
+      Begin now
+    </button>
+
+  </view>
+</view>

@@ -1,0 +1,38 @@
+/* pages/post/post.wxss */
+Page {
+  background-color: #fafafa;
+}
+
+.container {
+  padding: 60rpx;
+  width:80vw;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%;
+}
+
+.section {
+  background-color: white;
+  margin: 40rpx 0rpx;
+  padding: 20rpx;
+  border-radius: 8rpx;
+}
+
+.section__title {
+  font-weight: bold;
+}
+
+textarea {
+  padding: 20rpx 0rpx;
+}
+
+.btn-area button {
+  background-color: white;
+  border-radius: 0rpx;
+  font-size: 32rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx
+}

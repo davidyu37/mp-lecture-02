@@ -1,0 +1,19 @@
+<!--pages/post/post.wxml-->
+<view class="container">
+  <form bindsubmit="submitStory">
+    <image src="https://miro.medium.com/max/3840/1*0ubYRV_WNR9iYrzUAVINHw.jpeg" class="avatar" mode="aspectFill" />
+    <view class="section">
+      <view class="section__title">Name</view>
+      <input name="name" placeholder="please your name here" />
+    </view>
+    
+    <view class="section">
+      <view class="section__title">Your story</view>
+      <textarea name="content" placeholder="please write your FMC here" ></textarea> 
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+    </view>
+  </form>
+</view>

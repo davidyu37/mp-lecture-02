@@ -1,0 +1,12 @@
+<!--pages/stories/stories.wxml-->
+<view class="banner">
+    <view class="h1">F*** my code</view>
+    <view class="p">bugs are everywhere</view>
+</view>
+<view class="card-product" wx:for="{{stories}}">
+  <view class="card-product-infos">
+    <view class="h2">{{item.content}}</view>
+    <view class="p">{{item.name}}</view>
+  </view>
+</view>
+
