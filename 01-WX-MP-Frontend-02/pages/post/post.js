@@ -15,6 +15,8 @@ Page({
     const name = event.detail.value.name;
     const content = event.detail.value.content;
 
+    const page = this;
+
     console.log(app);
     wx.request({
       url: "https://fml.shanghaiwogeng.com/api/v1/stories",
@@ -24,8 +26,12 @@ Page({
         text: content
       },
       success: function(res) {
-        console.log(res.data);
         // Go back stories page
+        page.setData({
+          name: "",
+          content: ""
+        });
+
         wx.switchTab({
           url: '/pages/stories/stories',
         })

@@ -8,5 +8,6 @@
     <view class="h2">{{item.text}}</view>
     <view class="p">{{item.name}}</view>
   </view>
+  <button bindtap="deleteStory" data-id="{{item.id}}">Delete</button>
 </view>
 

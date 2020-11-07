@@ -4,12 +4,12 @@
     <image src="https://miro.medium.com/max/3840/1*0ubYRV_WNR9iYrzUAVINHw.jpeg" class="avatar" mode="aspectFill" />
     <view class="section">
       <view class="section__title">Name</view>
-      <input name="name" placeholder="please your name here" />
+      <input name="name" placeholder="please your name here" value="{{name}}"/>
     </view>
     
     <view class="section">
       <view class="section__title">Your story</view>
-      <textarea name="content" placeholder="please write your FMC here" ></textarea> 
+      <textarea name="content" placeholder="please write your FMC here" value="{{content}}"></textarea> 
     </view>
 
     <view class="btn-area">
