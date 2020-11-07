@@ -1,25 +1,29 @@
 // pages/stories/stories.js
-const app = getApp();
 
 Page({
   data: {
     stories: []
   },
-  onLoad: function() {
-    wx.getStorage({
-      key: 'stories',
-      success (res) {
-        console.log(res.data)
+  onShow: function() {
+    // Get data here
+    console.log('onLoad')
+    this.getStories();
+  },
+  getStories: function() {
+    const page = this;
+    wx.request({
+      url: 'https://fml.shanghaiwogeng.com/api/v1/stories',
+      method: "GET",
+      success: function(res) {
+        page.setData({
+          stories: res.data
+        });
+
       }
     })
 
-
-    this.setData({
-      stories: app.globalData.stories
-    });
-
-
+  },
+  clickMe: function () {
+    this.setData({ text: "Hello World" })
   }
-
-
 })

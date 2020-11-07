@@ -16,21 +16,35 @@ Page({
     const content = event.detail.value.content;
 
     console.log(app);
-    app.globalData.stories.push({
-      name,
-      content
-    });
-
-    const dataAsString = JSON.stringify(app.globalData.stories);
-
-    wx.setStorage({
-      data: dataAsString,
-      key: 'stories',
-    });
-
-    wx.switchTab({
-      url: '/pages/stories/stories',
+    wx.request({
+      url: "https://fml.shanghaiwogeng.com/api/v1/stories",
+      method: "POST",
+      data: {
+        name: name,
+        text: content
+      },
+      success: function(res) {
+        console.log(res.data);
+        // Go back stories page
+        wx.switchTab({
+          url: '/pages/stories/stories',
+        })
+      }
     })
+
+    // app.globalData.stories.push({
+    //   name,
+    //   content
+    // });
+
+    // const dataAsString = JSON.stringify(app.globalData.stories);
+
+    // wx.setStorage({
+    //   data: dataAsString,
+    //   key: 'stories',
+    // });
+
+    
 
   }
 })
